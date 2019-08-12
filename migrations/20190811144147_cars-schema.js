@@ -15,4 +15,4 @@ exports.up = function(knex) {
 exports.down = function(knex) {
   return knex.schema.dropTableIfExists("cars");
 };
-//
+//use knex migrate:latest to commit the changes
