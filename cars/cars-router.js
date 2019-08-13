@@ -22,7 +22,7 @@ router.post("/", async (req, res) => {
     const cars = await db("cars").insert(carData);
     res.status(201).json(cars);
   } catch (err) {
-    res.status(500).json({ message: "could not add car" });
+    res.status(500).json({ message: "could not add car", error: err.message });
   }
 });
 module.exports = router;
