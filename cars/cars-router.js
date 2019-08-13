@@ -16,6 +16,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  // need more detail in regards to creating POSTs. refer to API projects or add middleware
   const carData = req.body;
 
   try {
